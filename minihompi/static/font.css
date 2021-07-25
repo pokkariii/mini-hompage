@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+@font-face {
+  font-family: '국립박물관문화재단클래식B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Middleschool_student';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_08@1.0/Middleschool_student.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+.font-gae{
+  font-family: 'Gaegu', cursive;
+}
+
+.font-kor{
+  font-family: '국립박물관문화재단클래식B';
+}
+
+.font-mid{
+  font-family: 'Middleschool_student';
+}

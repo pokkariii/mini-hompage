@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/layout.css" />
+    <link rel="stylesheet" href="./static/font.css" />
+    <link rel="stylesheet" href="./static/home.css" />
+    <link rel="stylesheet" href="./static/diary.css" />
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="profile-container">
+            <div class="header profile-title font-kor">
+                TODAY <span class="color-red"> 30 </span> | TOTAL 787483
+            </div>
+            <div class="box profile-box">
+              <div class="profile-image">
+                <img
+                  class="profile-image-img"
+                  src="melonpangman.jpg"
+                  alt="프로필 이미지"
+                />
+              </div>
+              <div class="profile-text font-gae">
+                오는건 좋은데, 건들면 죽는다-_-^
+              </div>
+              <div class="profile-username font-gae">
+                <span style="color: #0f1b5c">메론빵</span> 🍈
+              </div>
+              <div class="profile-dropdown">
+                <div class="dropdown-btn">
+                  <div class="dropdown-title">파도타기</div>
+                  <div class="triangle-down"></div>
+                </div>
+                <div class="dropdown-content">
+                  <a target="_blank">블로그</a>
+                  <a target="_blank"
+                    >메론빵 구매하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="header content-title">
+              <div class="content-title-name font-kor">메론빵 냠냠긋</div>
+              <div class="content-title-url font-kor">https://url주소/나중에입력</div>
+            </div>
+            <div class="box content-box">
+              <div class="date-box font-kor">
+                <div class="today">07.25<br />FRI</div>
+                <div class="date-list">
+                  <div class="date">1</div>
+                  <div class="date">2</div>
+                  <div class="date"><span class="color-blue">3</span></div>
+                  <div class="date"><span class="color-red">4</span></div>
+                  <div class="date">5</div>
+                  <div class="date">6</div>
+                  <div class="date">7</div>
+                  <div class="date">8</div>
+                  <div class="date">9</div>
+                  <div class="date"><span class="color-blue">10</span></div>
+                  <div class="date"><span class="color-red">11</span></div>
+                  <div class="date">12</div>
+                  <div class="date">13</div>
+                  <div class="date">14</div>
+                  <div class="date">15</div>
+                  <div class="date">16</div>
+                  <div class="date"><span class="color-blue">17</span></div>
+                  <div class="date"><span class="color-red">18</span></div>
+                  <div class="date">19</div>
+                  <div class="date">20</div>
+                  <div class="date">21</div>
+                  <div class="date">22</div>
+                  <div class="date">23</div>
+                  <div class="date"><span class="color-blue">24</span></div>
+                  <div class="date"><span class="color-red">25</span></div>
+                  <div class="date">26</div>
+                  <div class="date">27</div>
+                  <div class="date">28</div>
+                  <div class="date">29</div>
+                  <div class="date">30</div>
+                  <div class="date"><span class="color-blue">31</span></div>
+                </div>
+              </div>
+              <div class="scroll-box">
+                <div class="diary-box">
+                  <div class="diary-date font-kor">2021.07.05 월요일 13:30</div>
+                  <div class="diary-text font-gae">
+                    싸이월드가 다시 부활한단다. <i class="fab fa-angellist"></i>
+                    <br>
+                    그런데 나는 이렇게 html로 미니홈피를 만들고 있구나.
+                    <br>
+                    재미따!!! 
+                    <br>
+                  </div>
+                </div>
+                <div class="diary-box">
+                  <div class="diary-date font-kor">2021.07.01 목요일 22:01</div>
+                  <div class="diary-text font-gae">
+                    7월의 다짐
+                    <br>
+                    7월이 시작되었다.
+                    <br>
+                    매번 같은 다짐을 하지만... 
+                    <br>
+                    남은 한 해를 알차게 보내야지 
+                    <br>
+                    아쟈아쟈 화이팅이닷! 
+                    <br>
+                  </div>
+                </div>
+                <div class="diary-box">
+                  <div class="diary-date font-kor">2021.01.23 토요일 20:01 </div>
+                  <div class="diary-text font-gae">
+                    울지말자
+                    <br> 
+                    난 얼은이니꽈
+                    <br>
+                  </div>
+                </div>
+
+                <div class="button-box">
+                  <button class="diary-button font-kor">
+                    <i class="fas fa-lock">메론빵의 비밀일기</i> 
+                  </button>
+                </div>
+                <div class="diary-box" id="secret-box">
+                    <div class="diary-date">메론빵</div>
+                    <div class="diary-text font-gae" id="secret-diary"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-container">
+            <a href="./home.html">홈</a>
+            <a href="./diary.html">다이어리</a>
+            <a href="./photo.html">사진첩</a>
+            <a href="./guest.html">방명록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        function getTextFile() {
+            var input = document.createElement("input");
+            input.type = "file";
+            input.accept = "text/plain";
+            input.onchange = function (event) {
+                processFile(event.target.files[0]);
+            };
+             input.click();
+            }
+
+        function processFile(file) {
+            var reader = new FileReader();
+            reader.readAsText(file, "utf-8");
+
+            reader.onload = function () {
+             document.getElementById("secret-diary").innerText = reader.result;
+             document.getElementById("secret-box").style.display = "block";
+            };
+         }
+    </script>
+  </body>
+</html>
